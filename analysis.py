@@ -1,13 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Read dataset
+# Read Netflix data
 df = pd.read_csv("data/netflix_titles.csv")
 
-# Show first 5 rows
+# Show first rows
 print(df.head())
 
-# Count Movies vs TV Shows
+# Create graph
 df['type'].value_counts().plot(kind='bar')
 
 plt.title("Movies vs TV Shows")
